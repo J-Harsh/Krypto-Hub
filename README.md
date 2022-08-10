@@ -2,7 +2,7 @@
 
 
 ## Demo
-#### Here is a working live demo :  https://crypto-hunter.netlify.app/
+#### Here is a working live demo :  https://kyrpto-hub.netlify.app/
 
 ## Built with 
 
