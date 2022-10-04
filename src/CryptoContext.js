@@ -16,8 +16,6 @@ const CryptoContext = ({children}) => {
   const [user, setUser] = useState(null);
   const [alert,setAlert]=useState({open:false, message:"",type:"success",});
   const [watchlist, setWatchlist] = useState([])
-  console.log(user);
-
  
 
   const fetchCoins = async () => {
@@ -38,7 +36,6 @@ const CryptoContext = ({children}) => {
       const coinRef = doc(db, "watchlist", user.uid);
       var unsubscribe = onSnapshot(coinRef, (coin) => {
         if (coin.exists()) {
-          console.log(coin.data().coins);
           setWatchlist(coin.data().coins);
         } else {
           console.log("No Items in Watchlist");
